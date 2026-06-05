@@ -2,7 +2,7 @@
 
 > A machine learning web application that predicts the popularity score of a Spotify track (0–100) based on its audio features and genre — built as part of a 5-project ML portfolio.
 
-**🔗 Live Demo:** [your-app-link-here.streamlit.app](https://spotify-popularity-predictor.streamlit.app/)
+**🔗 Live Demo:** [https://spotify-popularity-predictor.streamlit.app/](https://spotify-popularity-predictor.streamlit.app/)
 
 ---
 
