@@ -116,21 +116,32 @@ st.progress(int(prediction) / 100)
 st.divider()
 
 # ── Tabs ───────────────────────────────────────────────────
-tab1, tab2, tab3 = st.tabs(["📊 EDA Charts", "🔍 Feature Importance", "ℹ️ About"])
-
 with tab1:
     st.subheader("Correlation Heatmap")
-    st.image(str(ARTIFACTS / "heatmap.png"),use_container_width=True)
+
+    col1, col2, col3 = st.columns([1, 6, 1])
+    with col2:
+        st.image(str(ARTIFACTS / "heatmap.png"))
 
     st.subheader("Genre Analysis — Average Popularity")
-    st.image(str(ARTIFACTS / "genre_analysis.png"), use_container_width=True)
+
+    col1, col2, col3 = st.columns([1, 6, 1])
+    with col2:
+        st.image(str(ARTIFACTS / "genre_analysis.png"))
 
     st.subheader("Model Comparison")
-    st.image(str(ARTIFACTS / "model_comparison.png"), use_container_width=True)
+
+    col1, col2, col3 = st.columns([1, 6, 1])
+    with col2:
+        st.image(str(ARTIFACTS / "model_comparison.png"))
 
 with tab2:
     st.subheader("Top 20 Feature Importances — Random Forest")
-    st.image(str(ARTIFACTS / "feature_importance.png"), use_container_width=True)
+
+    col1, col2, col3 = st.columns([1, 6, 1])
+    with col2:
+        st.image(str(ARTIFACTS / "feature_importance.png"))
+
     st.markdown("""
     **Key finding:** Audio features (duration, loudness, acousticness, danceability)
     dominate over genre features — contradicting the initial hypothesis that genre alone drives popularity.
