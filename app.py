@@ -116,6 +116,12 @@ st.progress(int(prediction) / 100)
 st.divider()
 
 # ── Tabs ───────────────────────────────────────────────────
+st.divider()
+
+tab1, tab2, tab3 = st.tabs(
+    ["📊 EDA Charts", "🔍 Feature Importance", "ℹ️ About"]
+)
+
 with tab1:
     st.subheader("Correlation Heatmap")
 
